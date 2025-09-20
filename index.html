@@ -33,31 +33,21 @@
         <h3>About Me</h3>
         <p><strong>Name:</strong> dyu</p>
         <p><strong>Email:</strong> <a href="mailto:2297390530@qq.com">2297390530@qq.com</a></p>
+        <p>Hello! Welcome to my blog! My name is dyu. If you like my blog, please leave a comment to me. Thank you!</p>
       </section>
       
-      <!-- Disqus Comment Section -->
-      <div id="disqus_thread"></div>
-      <script>
-        var disqus_config = function () {
-          this.page.url = window.location.href; // Replace PAGE_URL with your page's canonical URL variable
-          this.page.identifier = document.location.pathname; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
-        };
-
-        (function() {
-          var d = document, s = d.createElement('script');
-          s.src = 'https://disqus_cd8PQoqK2I.disqus.com/embed.js';  // Use your Disqus shortname here
-          s.setAttribute('data-timestamp', +new Date());
-          (d.head || d.body).appendChild(s);
-        })();
-      </script>
-
-      <!-- Comment Section (alternative form, if needed) -->
+      <!-- Comment Section -->
       <div class="comments">
         <h3>Comments:</h3>
-        <form action="submit_comment" method="POST">
-          <textarea name="comment" placeholder="Leave a comment..."></textarea><br>
-          <button type="submit">Submit Comment</button>
-        </form>
+        <div id="disqus_thread"></div>
+        <script>
+          (function() {
+            var d = document, s = d.createElement('script');
+            s.src = 'https://disqus.com/by/disqus_cd8PQoqK2I/embed.js';  // 这里是您的 Disqus shortname
+            s.setAttribute('data-timestamp', +new Date());
+            (d.head || d.body).appendChild(s);
+          })();
+        </script>
       </div>
     </div>
   </main>
