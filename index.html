@@ -39,19 +39,10 @@
       <!-- Comment Section -->
       <div class="comments">
         <h3>Comments:</h3>
-        <div id="disqus_thread"></div>
-        <script>
-          var disqus_config=function(){
-            this.page.url=window.location.href;
-            this.page.identifier=window.location.pathname.split('/').pop();
-          };
-          (function() {
-            var s = document.createElement('script');
-            s.src = 'https://disqus_cd8PQoqK2I.disqus.com/embed.js';  // Replace with your Disqus shortname
-            s.setAttribute('data-timestamp', +new Date());
-            (document.head || document.body).appendChild(s);
-          })();
-        </script>
+        <form action="submit_comment" method="POST">
+          <textarea name="comment" placeholder="Leave a comment..."></textarea><br>
+          <button type="submit">Submit Comment</button>
+        </form>
       </div>
     </div>
   </main>
