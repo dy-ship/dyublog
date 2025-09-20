@@ -41,11 +41,15 @@
         <h3>Comments:</h3>
         <div id="disqus_thread"></div>
         <script>
+          var disqus_config=function(){
+            this.page.url=window.location.href;
+            this.page.identifier=window.location.pathname.split('/').pop();
+          };
           (function() {
-            var d = document, s = d.createElement('script');
-            s.src = 'https://disqus.com/by/disqus_cd8PQoqK2I/embed.js';  // 这里是您的 Disqus shortname
+            var s = document.createElement('script');
+            s.src = 'https://disqus_cd8PQoqK2I.disqus.com/embed.js';  // Replace with your Disqus shortname
             s.setAttribute('data-timestamp', +new Date());
-            (d.head || d.body).appendChild(s);
+            (document.head || document.body).appendChild(s);
           })();
         </script>
       </div>
