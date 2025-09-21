@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>dyu · 电商与个人成长笔记</title>
+  <meta name="description" content="记录 Amazon FBA 实战、自动化脚本、个人网站与图片处理流程。分享可复用方法与工具，帮助独立卖家与创作者提升效率。" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <h1>dyu</h1>
+        <p class="tagline">电商实战 · 自动化脚本 · 工具沉淀</p>
+      </div>
+      <nav class="site-nav" aria-label="主导航">
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#posts">Blog</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#tools">Tools</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="site-main container" id="home">
+    <section class="hero">
+      <div class="hero-inner">
+        <h2>做一个可复用的「个人操作系统」</h2>
+        <p class="lead">记录 Amazon FBA 实战、自动化脚本、前端小工具与图片处理流程 — 把方法整理成可复用的模板与工具。</p>
+        <div class="hero-ctas">
+          <a class="btn" href="#posts">立即阅读</a>
+          <a class="btn btn-outline" href="#projects">查看项目</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="posts" class="section">
+      <h3 class="section-title">精选文章</h3>
+      <div class="cards">
+        <article class="card">
+          <h4>亚马逊利润计算：从 Excel 到 Python 的完整迁移</h4>
+          <p class="muted">把售价、头程、FBA、退货率、广告费率、佣金统一进一个可维护的脚本，并导出 Excel 模板供下载。</p>
+          <a class="more" href="#">阅读全文 →</a>
+        </article>
+        <article class="card">
+          <h4>个人网站 7 天上线：从草稿到可评论的博客</h4>
+          <p class="muted">部署、评论系统、SEO 最小可行集与常见坑位清单。</p>
+          <a class="more" href="#">阅读全文 →</a>
+        </article>
+        <article class="card">
+          <h4>产品图可复用工作流：PS 图层命名与导出规范</h4>
+          <p class="muted">一套命名 + 导出规范，减少返工并提升上图效率。</p>
+          <a class="more" href="#">阅读全文 →</a>
+        </article>
+      </div>
+    </section>
+
+    <section id="projects" class="section">
+      <h3 class="section-title">Projects</h3>
+      <div class="project-grid">
+        <div class="project-card">
+          <h4>Amazon 定价与利润计算器（Python / Web）</h4>
+          <p>功能：手动输入售价、头程、FBA、退货率、广告费率、佣金；计算毛利、净利并支持导出 Excel。</p>
+          <p class="small">交付：app.py / Dockerfile / README / requirements</p>
+        </div>
+        <div class="project-card">
+          <h4>个人网站（Blog + 评论 + SEO）</h4>
+          <p>功能：文章列表、分类、Disqus 评论、移动端导航与内容导出。</p>
+          <p class="small">交付：静态页面 + 内容模板</p>
+        </div>
+        <div class="project-card">
+          <h4>产品图处理模板（PSD）</h4>
+          <p>图层命名规范、导出预设、常见修图动作与批处理脚本。</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="tools" class="section">
+      <h3 class="section-title">Tools · 亚马逊利润计算器</h3>
+      <p>下方内嵌了我部署在 Zeabur 的计算器（如果出现空白，请点击“在新窗口打开”）。</p>
+      <p style="margin-bottom:8px;"><a class="link" href="https://amazoncal.zeabur.app/" target="_blank" rel="noopener">在新窗口打开应用 →</a></p>
+      <div class="iframe-wrap">
+        <iframe src="https://amazoncal.zeabur.app/" title="Amazon Profit Calculator" width="100%" height="720" frameborder="0" loading="lazy"></iframe>
+      </div>
+      <div class="tools-links">
+        <a class="download" href="#" aria-label="下载利润计算脚本">下载：利润计算脚本 (.py)</a>
+        <a class="download" href="#" aria-label="下载 Excel 模板">下载：Excel 模板 (.xlsx)</a>
+      </div>
+    </section>
+
+    <section id="resources" class="section">
+      <h3 class="section-title">Resources</h3>
+      <ul class="resources-list">
+        <li>部署指南：Zeabur / Streamlit 一键部署（包含 start command）</li>
+        <li>常用公式：毛利 &amp; 净利 计算模板</li>
+        <li>图片规范：主图尺寸、色卡、导出命名规则</li>
+      </ul>
+    </section>
+
+    <aside class="subscribe-card section">
+      <h4>订阅更新</h4>
+      <p>输入邮箱，收到文章与工具更新提醒（当前仅本地提示，未来可接入邮件服务）。</p>
+      <form id="subscribe-form">
+        <input type="email" id="subscribe-email" placeholder="your@email.com" required />
+        <button class="btn" type="submit">订阅</button>
+      </form>
+    </aside>
+
+    <section id="about" class="section about-me">
+      <h3 class="section-title">About</h3>
+      <p><strong>你好，我是 dyu。</strong> 我长期做电商与个人效率相关实践，重点在 Amazon FBA、自动化脚本、前端小工具与图片工作流优化。这个博客希望把方法沉淀成可复用的模板，避免重复踩坑。</p>
+      <p><strong>擅长：</strong>电商运营策略、利润建模、轻量化工具开发、PS 图片规范化</p>
+      <p><strong>邮箱：</strong> <a href="mailto:dyu87414@gmail.com">dyu87414@gmail.com</a></p>
+      <p class="social">GitHub · <a href="#" target="_blank" rel="noopener">github.com/yourname</a> ｜ LinkedIn · <a href="#" target="_blank" rel="noopener">linkedin.com/in/yourname</a></p>
+    </section>
+
+    <section id="contact" class="section">
+      <h3 class="section-title">Contact</h3>
+      <p>想合作或者交流？欢迎邮件联系我：<a href="mailto:dyu87414@gmail.com">dyu87414@gmail.com</a>。也可以在文章下方通过 Disqus 留言。</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© 2025 dyu · 一起把“可复用”的方法做厚做深。</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
