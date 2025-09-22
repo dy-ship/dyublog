@@ -125,7 +125,31 @@
       <p>想合作或者交流？欢迎邮件联系我：<a href="mailto:dyu87414@gmail.com">dyu87414@gmail.com</a>。也可以在文章下方通过 Disqus 留言。</p>
     </section>
   </main>
+  <section id="comments" class="section">
+    <div class="container">
+      <h3 class="section-title">评论区</h3>
+      <div id="disqus_thread"></div>
+    </div>
+  </section>
 
+  <script>
+    var disqus_config = function () {
+      this.page.url = window.location.href;
+      this.page.identifier = document.title;
+    };
+    (function() {
+      var d = document, s = d.createElement('script');
+      s.src = 'https://dyu.disqus.com/embed.js';
+      s.setAttribute('data-timestamp', +new Date());
+      (d.head || d.body).appendChild(s);
+    })();
+  </script>
+  <noscript>请开启 JavaScript 以查看
+    <a href="https://disqus.com/?ref_noscript">Disqus 评论</a>
+  </noscript>
+  <script id="dsq-count-scr" src="//dyu.disqus.com/count.js" async></script>
+
+  
   <footer class="site-footer">
     <div class="container">
       <p>© 2025 dyu · 一起把“可复用”的方法做厚做深。</p>
